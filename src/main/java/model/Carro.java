@@ -1,18 +1,23 @@
 package model;
 
-import java.util.Date;
-import java.util.Objects;
+import java.time.LocalDate;
+import java.time.Year;
+import java.util.*;
+import javax.money.CurrencyUnit;
+import javax.money.Monetary;
 import javax.money.MonetaryAmount;
 
 public class Carro {
     private final long id;
     private final String marca;
     private final String modelo;
-    private final Date ano;
+    private final Year ano;
     private MonetaryAmount valorDiaria;
 
+    //CurrencyUnit real = Monetary.getCurrency("BRL");
 
-    public Carro(long id, String marca, String modelo, Date ano, MonetaryAmount valorDiaria) {
+
+    public Carro(long id, String marca, String modelo, Year ano, MonetaryAmount valorDiaria) {
         this.id = id;
         this.marca = marca;
         this.modelo = modelo;

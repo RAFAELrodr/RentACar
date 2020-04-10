@@ -2,16 +2,17 @@ package model;
 
 import util.Endereco;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
 public class PessoaFisica extends Pessoa {
 
     private final long cpf;
-    private final Date dataNascimento;
+    private final LocalDate dataNascimento;
 
 
-    public PessoaFisica(String nome, Endereco endereco, String email, long cpf, Date dataNascimento) {
+    public PessoaFisica(String nome, Endereco endereco, String email, long cpf, LocalDate dataNascimento) {
         super(nome, endereco, email);
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;

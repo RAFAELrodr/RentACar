@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e8420f9-d5ef-4090-a98f-67c8881b7539" name="Default Changelist" comment="" />
+    <list default="true" id="9e8420f9-d5ef-4090-a98f-67c8881b7539" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Locacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/StatusCarro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/StatusCarro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/PessoaFisica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/PessoaFisica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/IPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/IPagamento.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -28,12 +38,33 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="util" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.Application" />
+      <module name="RentACar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -46,21 +77,45 @@
       <option name="presentableId" value="Default" />
       <updated>1586192480553</updated>
     </task>
+    <task id="LOCAL-00001" summary="segundo-commit">
+      <created>1586463757083</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586463757083</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="segundo-commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="segundo-commit" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586315017042">
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1586481207758">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586315017042" />
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586481207758" />
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1586556159994">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586556159994" />
     <state x="213" y="20" key="Maven.ArtifactSearchDialog" timestamp="1586459846993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="20" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1586459846993" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1586463785946">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586463785946" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586312784364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586312784364" />
+    <state x="484" y="156" key="git4idea.merge.GitMergeDialog" timestamp="1586466892202">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="156" key="git4idea.merge.GitMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1586466892202" />
     <state x="389" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1586214254883">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
