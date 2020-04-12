@@ -8,10 +8,10 @@ import javax.money.Monetary;
 import javax.money.MonetaryAmount;
 
 public class Carro {
-    private final long id;
-    private final String marca;
-    private final String modelo;
-    private final Year ano;
+    private  long id;
+    private  String marca;
+    private  String modelo;
+    private  Year ano;
     private MonetaryAmount valorDiaria;
 
     //CurrencyUnit real = Monetary.getCurrency("BRL");
@@ -22,6 +22,30 @@ public class Carro {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
+        this.valorDiaria = valorDiaria;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public Year getAno() {
+        return ano;
+    }
+
+    public MonetaryAmount getValorDiaria() {
+        return valorDiaria;
+    }
+
+    public void setValorDiaria(MonetaryAmount valorDiaria) {
         this.valorDiaria = valorDiaria;
     }
 

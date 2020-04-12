@@ -3,6 +3,7 @@ package model;
 import util.Endereco;
 import util.IPagamento;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class PessoaJuridica extends Pessoa implements IPagamento {
@@ -12,6 +13,9 @@ public class PessoaJuridica extends Pessoa implements IPagamento {
     public PessoaJuridica(String nome, Endereco endereco, String email, long cnpj) {
         super(nome, endereco, email);
         this.cnpj = cnpj;
+    }
+    public void reservaCarro(Pessoa pessoa, LocalDate dataReserva, Carro carro){
+
     }
 
 
@@ -30,8 +34,10 @@ public class PessoaJuridica extends Pessoa implements IPagamento {
 
 
 
+
+
     @Override
-    public String cartaao() {
+    public String cartao() {
         return null;
     }
 }
