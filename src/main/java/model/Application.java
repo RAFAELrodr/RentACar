@@ -1,5 +1,6 @@
 package model;
 
+import exceptions.CarroNotAble;
 import exceptions.ReservaDuplicada;
 import jdk.vm.ci.meta.Local;
 import org.javamoney.moneta.Money;
@@ -27,7 +28,7 @@ public class Application {
                 new Endereco("Rua x", 111, "Assis", "SP"),
                 "rafael@gmail", 123456789, LocalDate.of(1991, 2, 15));
 
-       // List<Carro> carros = new LinkedList<>();
+        // List<Carro> carros = new LinkedList<>();
         Carro carro = new Carro(123,
                 "Volks",
                 "gol",
@@ -35,7 +36,7 @@ public class Application {
                 Money.of(10, real));
         //carros.add(carro);
 
-       // List<Carro> carros2 = new LinkedList<>();
+        // List<Carro> carros2 = new LinkedList<>();
         Carro carro2 = new Carro(5000,
                 "Chevrolet",
                 "opala",
@@ -43,17 +44,24 @@ public class Application {
                 Money.of(50, real));
         //carros2.add(carro2);
 
-        try{
-            pessoaFisica.reservaCarro(pessoaFisica, LocalDate.of(2020,10,10),carro2);
-            pessoaFisica.reservaCarro(pessoaFisica, LocalDate.of(2020,10,10),carro);
-            pessoaFisica.reservaCarro(pessoaFisica1, LocalDate.of(2020,10,10),carro);
-            pessoaFisica.reservaCarro(pessoaFisica1, LocalDate.of(2020,10,10),carro2);
-        }catch (ReservaDuplicada mi){
+        try {
+            pessoaFisica.alugarCarro(LocalDate.of(2020, 10, 10), carro2);
+            pessoaFisica.alugarCarro(LocalDate.of(2020, 10, 11), carro);
+            pessoaFisica1.alugarCarro(LocalDate.of(2020, 10, 10), carro);
+            pessoaFisica.alugarCarro(LocalDate.of(2020, 10, 10), carro2);
+        } catch (CarroNotAble mi) {
             mi.printStackTrace();
         }
 
 
-        pessoaFisica.imprimirReserva();
+        pessoaFisica.imprimirAlugados();
+        pessoaFisica1.imprimirAlugados();
+
+        pessoaFisica.devolverCarro(LocalDate.of(2020,10,11),
+                LocalDate.of(2020,11,11),
+                carro);
+       // System.out.println("Nome:" + carro2.getAno() + "Status: " + carro2.getStatusCarro());
+       // pessoaFisica.devolverCarro(pessoaFisica, );
 
 
         System.out.println("Teste");
@@ -68,23 +76,22 @@ public class Application {
         //map1.put(LocalDate.of(2020, 04, 10), carros);
 
 
-
         //map2.put(LocalDate.of(2020, 04, 15), carros);
-       // map2.put(LocalDate.of(2020, 04, 20), carros);
+        // map2.put(LocalDate.of(2020, 04, 20), carros);
 
         //reservaCarro.put(pessoaFisica, map1);
 
         //reservaCarro.put(pessoaFisica1, map2);
 
         //reservaCarro.keySet().forEach(pessoa -> {
-            //System.out.println("Nome: " + pessoa.getNome());
-           // reservaCarro.get(pessoa).keySet().forEach(localDate -> {
-               // System.out.println("Data: " + localDate);
-                //reservaCarro.get(pessoa).get(localDate).forEach(carro1 -> {
-                   // System.out.println(carro1.getModelo());
-                //});
-           // });
+        //System.out.println("Nome: " + pessoa.getNome());
+        // reservaCarro.get(pessoa).keySet().forEach(localDate -> {
+        // System.out.println("Data: " + localDate);
+        //reservaCarro.get(pessoa).get(localDate).forEach(carro1 -> {
+        // System.out.println(carro1.getModelo());
+        //});
+        // });
 
-       // });
+        // });
     }
 }

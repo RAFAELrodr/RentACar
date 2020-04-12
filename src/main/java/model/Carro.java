@@ -1,5 +1,7 @@
 package model;
 
+import enums.StatusCarro;
+
 import java.time.LocalDate;
 import java.time.Year;
 import java.util.*;
@@ -12,6 +14,7 @@ public class Carro {
     private  String marca;
     private  String modelo;
     private  Year ano;
+    private StatusCarro statusCarro = StatusCarro.DISPONIVEL;
     private MonetaryAmount valorDiaria;
 
     //CurrencyUnit real = Monetary.getCurrency("BRL");
@@ -39,6 +42,14 @@ public class Carro {
 
     public Year getAno() {
         return ano;
+    }
+
+    public StatusCarro getStatusCarro() {
+        return statusCarro;
+    }
+
+    public void setStatusCarro(StatusCarro statusCarro) {
+        this.statusCarro = statusCarro;
     }
 
     public MonetaryAmount getValorDiaria() {
