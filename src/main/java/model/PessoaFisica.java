@@ -1,10 +1,12 @@
 package model;
 
 import enums.StatusCarro;
+import exceptions.AluguelNotFound;
 import exceptions.CarroNotAble;
 import exceptions.CarroNotFound;
 import exceptions.ReservaDuplicada;
 import util.Endereco;
+import util.IClientes;
 
 import javax.money.MonetaryAmount;
 import javax.money.MonetaryQuery;
@@ -15,7 +17,7 @@ import java.time.temporal.TemporalAmount;
 import java.util.*;
 import java.util.function.Consumer;
 
-public class PessoaFisica extends Pessoa {
+public class PessoaFisica extends Pessoa  implements IClientes {
 
     private long cpf;
     private LocalDate dataNascimento;
@@ -37,6 +39,7 @@ public class PessoaFisica extends Pessoa {
 
     private Map<LocalDate, List<Carro>> carrosAlugados = new LinkedHashMap<>();
 
+    @Override
     public void alugarCarro(LocalDate dataAluguel, Carro carro) throws CarroNotAble {
         Objects.requireNonNull(dataAluguel, "Data nao pode se nula");
         Objects.requireNonNull(carro, "Carro nao pode ser nulo");
@@ -55,42 +58,58 @@ public class PessoaFisica extends Pessoa {
     }
 
     public void imprimirAlugados() {
+        System.out.println(this);
+        this.carrosAlugados.keySet().forEach(dataAluguel -> {
 
-        this.carrosAlugados.keySet().forEach(dataReserva -> {
-            System.out.println(PessoaFisica.super.getNome());
-            System.out.println("Data: " + dataReserva);
-            this.carrosAlugados.get(dataReserva).forEach(carros -> {
-                System.out.println("Carro: " + carros.getModelo());
+            System.out.println("Data: " + dataAluguel);
+            this.carrosAlugados.get(dataAluguel).forEach(carros -> {
+                System.out.println(carros);
             });
         });
     }
 
-    public void devolverCarro(LocalDate dataReserva, LocalDate dataDevolucao, Carro carro) {
-        Objects.requireNonNull(dataReserva, "Data nao pode ser nula");
+    @Override
+    public void devolverCarro(LocalDate dataAluguel, LocalDate dataDevolucao, Carro carro) throws AluguelNotFound {
+        Objects.requireNonNull(dataAluguel, "Data nao pode ser nula");
 
-        if (this.carrosAlugados.containsKey(dataReserva)) {
-            if (this.carrosAlugados.get(dataReserva).contains(carro)) {
+        if (this.carrosAlugados.containsKey(dataAluguel)) {
+            if (this.carrosAlugados.get(dataAluguel).contains(carro)) {
                 this.carrosAlugados.remove(carro);
                 carro.setStatusCarro(StatusCarro.DISPONIVEL);
-                long diasAluguel = ChronoUnit.DAYS.between(dataReserva,dataDevolucao);
+                long diasAluguel = ChronoUnit.DAYS.between(dataAluguel, dataDevolucao);
 
-                System.out.println("Carro devolvido: " + carro.getModelo() + " Valor do Aluguel " + carro.getValorDiaria().multiply(diasAluguel));
+                System.out.println("Cliente: " + this.getNome() +
+                        " Carro: " + carro.getModelo() +
+                        ", Data do Aluguel: "+ dataAluguel +
+                        ", Data devolução: " + dataDevolucao +
+                        ", Valor do Aluguel " + carro.getValorDiaria().multiply(diasAluguel));
                 //carro.setValorDiaria() ;
+            } else {
+                throw new AluguelNotFound("Aluguel nao existe nesta data: ", dataAluguel);
             }
         }
     }
+
+    public List<Carro> procurarAluguel(LocalDate dataAluguel) throws AluguelNotFound {
+        if (this.carrosAlugados.containsKey(dataAluguel)) {
+            return this.carrosAlugados.get(dataAluguel);
+        } else {
+            throw new AluguelNotFound("Data nao consta Aluguel", dataAluguel);
+        }
+    }
+
     /*private Map<LocalDate, List<Carro>> pedidoReserva = new LinkedHashMap<>();
     private Map<Pessoa, Map<LocalDate, List<Carro>>> reservaCarro = new LinkedHashMap<>();
 
-    public void reservaCarro(PessoaFisica pessoa, LocalDate dataReserva, Carro carro) throws ReservaDuplicada {
+    public void reservaCarro(PessoaFisica pessoa, LocalDate dataAluguel, Carro carro) throws ReservaDuplicada {
 
         Map<LocalDate, List<Carro>> carros = Optional.ofNullable(this.reservaCarro.get(pessoa)).orElse(new LinkedHashMap<>());
-        List<Carro> carro3 = Optional.ofNullable(carros.get(dataReserva)).orElse(new LinkedList<>());
+        List<Carro> carro3 = Optional.ofNullable(carros.get(dataAluguel)).orElse(new LinkedList<>());
         if (carro3.contains(carro)) {
             throw new ReservaDuplicada("valor repetido", carro);
         }
         carro3.add(carro);
-        carros.put(dataReserva, carro3);
+        carros.put(dataAluguel, carro3);
 
         this.reservaCarro.put(pessoa, carros);
 
@@ -98,12 +117,12 @@ public class PessoaFisica extends Pessoa {
     }*/
 
 
-   /* public void devolverCarro(Pessoa pessoa, LocalDate dataReserva, List<Carro> carro) {
-        Objects.requireNonNull(dataReserva, "Data de reserva ser informada");
+   /* public void devolverCarro(Pessoa pessoa, LocalDate dataAluguel, List<Carro> carro) {
+        Objects.requireNonNull(dataAluguel, "Data de reserva ser informada");
 
-        if (this.carrosAlugados.get(dataReserva).containsKey(carro)) {
-            if (this.reservaCarro.get(pessoa).get(dataReserva).contains(carro)) {
-                this.reservaCarro.get(pessoa).get(dataReserva).remove(carro);
+        if (this.carrosAlugados.get(dataAluguel).containsKey(carro)) {
+            if (this.reservaCarro.get(pessoa).get(dataAluguel).contains(carro)) {
+                this.reservaCarro.get(pessoa).get(dataAluguel).remove(carro);
                 carro.setStatusCarro(StatusCarro.DISPONIVEL);
             }else{
                 throw new CarroNotFound("Carro nao encontrado");
@@ -125,6 +144,16 @@ public class PessoaFisica extends Pessoa {
 
         });
     }*/
+
+    @Override
+    public String toString() {
+        return "TIPO: " + PessoaFisica.class.getSimpleName() +
+                " Nome: " + this.getNome() +
+                " Cpf:" + cpf +
+                " Endereço: " + this.getEndereco() +
+                " Data de Nascimento: " + dataNascimento +
+                " Email: " + this.getEmail();
+    }
 
     @Override
     public boolean equals(Object o) {

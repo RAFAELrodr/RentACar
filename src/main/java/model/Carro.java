@@ -61,6 +61,17 @@ public class Carro {
     }
 
     @Override
+    public String toString() {
+        return "Carro: " +
+                "identificação: " + id +
+                ", Marca: '" + marca +
+                ", Modelo: " + modelo +
+                ", Ano: " + ano +
+                ", Status: " + statusCarro +
+                ", Valor da diaria: " + valorDiaria;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

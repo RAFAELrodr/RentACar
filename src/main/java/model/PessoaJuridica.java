@@ -1,12 +1,14 @@
 package model;
 
+import exceptions.AluguelNotFound;
+import exceptions.CarroNotAble;
 import util.Endereco;
-import util.IPagamento;
+import util.IClientes;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class PessoaJuridica extends Pessoa implements IPagamento {
+public class PessoaJuridica extends Pessoa implements IClientes {
     private final long cnpj;
 
 
@@ -33,11 +35,13 @@ public class PessoaJuridica extends Pessoa implements IPagamento {
     }
 
 
+    @Override
+    public void alugarCarro(LocalDate dataAluguel, Carro carro) throws CarroNotAble {
 
-
+    }
 
     @Override
-    public String cartao() {
-        return null;
+    public void devolverCarro(LocalDate dataAluguel, LocalDate dataDevolucao, Carro carro) throws AluguelNotFound {
+
     }
 }
