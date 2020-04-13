@@ -1,12 +1,4 @@
-<p align="center">
-#Rent A Car
-</p>
-
-#Rent A Car
-
-# 
-
-<br>
+# Rent A Car
 
 <br>
 
