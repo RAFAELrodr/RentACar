@@ -1,4 +1,8 @@
-# Rent A Car
+<p align="center">
+  <img src="public/logoImg.png" width="300px"/>
+</p>
+
+# 
 
 <br>
 
