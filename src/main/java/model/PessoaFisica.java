@@ -12,8 +12,8 @@ import java.util.*;
 
 public class PessoaFisica extends Pessoa  implements IClientes {
 
-    private long cpf;
-    private LocalDate dataNascimento;
+    private final long cpf;
+    private final LocalDate dataNascimento;
 
 
     public PessoaFisica(String nome, Endereco endereco, String email, long cpf, LocalDate dataNascimento) {

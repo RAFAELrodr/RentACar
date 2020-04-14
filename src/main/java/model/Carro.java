@@ -10,10 +10,10 @@ import javax.money.Monetary;
 import javax.money.MonetaryAmount;
 
 public class Carro {
-    private  long id;
-    private  String marca;
-    private  String modelo;
-    private  Year ano;
+    private final long id;
+    private  final String marca;
+    private final String modelo;
+    private  final Year ano;
     private StatusCarro statusCarro = StatusCarro.DISPONIVEL;
     private MonetaryAmount valorDiaria;
 
