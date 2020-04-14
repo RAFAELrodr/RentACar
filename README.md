@@ -4,12 +4,22 @@
 
 <p align="center">
   <a href="#Descrição-">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Alunos">Alunos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 ## Descrição
 
-A aplicação **Rent A Car** é direcionada a auxiliar pessoas ou empresas que desejam alugar um carro, essa aplicação tem como objetivo revisar/aplicar os conceitos sobre "Orientação a Objetos e Clean Code (boas práticas)" e ainda está em desenvolvimento.
+A aplicação **Rent A Car** é direcionada a auxiliar pessoas ou empresas que desejam alugar um carro, essa aplicação tem como objetivo revisar/aplicar os conceitos sobre "Orientação a Objetos e Clean Code (boas práticas)" e ainda está em desenvolvimento, no momento, temos os métodos de alugar, imprimir e devolver e um filtro para status do carro.
+
+<br>
+
+## Alunos
+
+<p>Nome: Georg Augusto Schlegel - RA:</p>
+<p>Nome: Higor dos Santos Martins - RA:</p>
+<p>Nome: Matheus Cavassini Ferreira - RA:</p>
+<p>Nome: Rafael de Lima Rodrigues - RA:</p>
 
 <br>
 
