@@ -9,7 +9,7 @@
 <p align="center">
   <a href="#Descrição-">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Alunos">Alunos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Conceitos">Conceitos e recursos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 ## Descrição
@@ -27,7 +27,7 @@ A aplicação **Rent A Car** é direcionada a auxiliar pessoas ou empresas que d
 
 <br>
 
-## Conceitos e recursos
+## Tecnologias
 
 Para a criação dessa aplicação Java foram utilizados os seguintes conceitos e recursos:
 
