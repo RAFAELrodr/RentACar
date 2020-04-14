@@ -3,15 +3,12 @@ package model;
 import enums.StatusCarro;
 import exceptions.AluguelNotFound;
 import exceptions.CarroNotAble;
-import exceptions.ReservaDuplicada;
 
-import jdk.vm.ci.meta.Local;
 import org.javamoney.moneta.Money;
 import util.Endereco;
 
 import javax.money.CurrencyUnit;
 import javax.money.Monetary;
-import javax.money.MonetaryAmount;
 import java.time.LocalDate;
 import java.time.Year;
 import java.util.*;

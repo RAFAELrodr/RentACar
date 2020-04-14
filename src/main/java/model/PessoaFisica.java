@@ -3,19 +3,12 @@ package model;
 import enums.StatusCarro;
 import exceptions.AluguelNotFound;
 import exceptions.CarroNotAble;
-import exceptions.CarroNotFound;
-import exceptions.ReservaDuplicada;
 import util.Endereco;
 import util.IClientes;
 
-import javax.money.MonetaryAmount;
-import javax.money.MonetaryQuery;
 import java.time.LocalDate;
-import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalAmount;
 import java.util.*;
-import java.util.function.Consumer;
 
 public class PessoaFisica extends Pessoa  implements IClientes {
 

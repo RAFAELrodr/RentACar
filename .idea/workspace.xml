@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e8420f9-d5ef-4090-a98f-67c8881b7539" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/AluguelNotFound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enums/StatusCarro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/StatusCarro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/CarroNotAble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/CarroNotAble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/CarroNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/CarroNotFound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/ReservaDuplicada.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Locacao.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/PessoaFisica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/PessoaFisica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PessoaJuridica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/PessoaJuridica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/IPagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/IClientes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HelloCleanCodeOO (v4) - Lambda, Stream e Optional/HelloCleanCodeOO" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -116,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586717460708</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1586817391348</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586817391348</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -134,30 +135,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="310" y="39" key="#toString()_Generation_Settings/0.0.1366.728@0.0.1366.728" timestamp="1586793406279" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1586717458756">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1586817389671">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586717458756" />
-    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1586811124813">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586817389671" />
+    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1586820790561">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586811124813" />
-    <state width="1323" height="249" key="GridCell.Tab.0.bottom" timestamp="1586817079789">
+    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586820790561" />
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom" timestamp="1586823148721">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586817079789" />
-    <state width="1323" height="249" key="GridCell.Tab.0.center" timestamp="1586817079789">
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586823148721" />
+    <state width="1323" height="249" key="GridCell.Tab.0.center" timestamp="1586823148721">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586817079789" />
-    <state width="1323" height="249" key="GridCell.Tab.0.left" timestamp="1586817079789">
+    <state width="1323" height="249" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586823148721" />
+    <state width="1323" height="249" key="GridCell.Tab.0.left" timestamp="1586823148721">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586817079789" />
-    <state width="1323" height="249" key="GridCell.Tab.0.right" timestamp="1586817079789">
+    <state width="1323" height="249" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586823148721" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right" timestamp="1586823148721">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="249" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586817079789" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586823148721" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1586716822119">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -182,14 +183,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586569166593" />
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1586717477375">
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1586817564063">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586717477375" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586817564063" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586810943701">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586810943701" />
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586823266970">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586823266970" />
     <state x="413" y="120" key="extract.method.dialog" timestamp="1586669790364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -198,6 +203,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="484" y="156" key="git4idea.merge.GitMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1586466892202" />
+    <state x="409" y="156" key="git4idea.merge.GitPullDialog" timestamp="1586823413178">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="409" y="156" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1586823413178" />
     <state x="65" y="0" key="new project wizard" timestamp="1586558836437">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
