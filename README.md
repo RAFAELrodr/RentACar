@@ -20,10 +20,10 @@ A aplicação **Rent A Car** é direcionada a auxiliar pessoas ou empresas que d
 
 ## Alunos
 
-<p>Georg Augusto Schlegel - RA:</p>
-<p>Higor dos Santos Martins - RA:</p>
-<p>Matheus Cavassini Ferreira - RA:</p>
-<p>Rafael de Lima Rodrigues - RA:</p>
+<p>Georg Augusto Schlegel - RA:1811550256</p>
+<p>Higor dos Santos Martins - RA:1811550301</p>
+<p>Matheus Cavassini Ferreira - RA:1811550232</p>
+<p>Rafael de Lima Rodrigues - RA:1811550177</p>
 
 <br>
 
