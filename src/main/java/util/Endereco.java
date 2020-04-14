@@ -48,29 +48,7 @@ public class Endereco {
         this.estado = estado;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Endereco endereco = (Endereco) o;
-        return numero == endereco.numero &&
-                rua.equals(endereco.rua) &&
-                cidade.equals(endereco.cidade) &&
-                estado.equals(endereco.estado);
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(rua, numero, cidade, estado);
-    }
-
-    @Override
-    public String toString() {
-        return  "RUA: " + rua +
-                ", Nº: " + numero +
-                ", Cidade: " + cidade +
-                ", UF: " + estado;
-    }
 }
 
 
